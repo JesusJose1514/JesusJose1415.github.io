@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Q'RICO</title>
+    <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fqricomanizales%2F%3Flocale%3Des_LA&psig=AOvVaw3d4drD_OLKLXGxahLbGFwv&ust=1699737138665000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDy0PStuoIDFQAAAAAdAAAAABAE">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Q'RICO</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Blog</span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="social">
+                    <a href="tel:+222-3456-34">
+                        <i class="fa-solid fa-phone"></i>
+                        222-3456-34
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="nav-responsive" id="bar" HTMLDivElement.onclick=mostrarOcultar()>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>            
+        </header>
+        <!-- CARRUSEL -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{"wrapAoround":true, "pageDots":false, "autoplay":true}'>
+
+                <div class="gallry-cell">
+                    <img src="img.1.jpg" alt="imagen 1">
+                </div>
+                <div class="gallry-cell">
+                    <img src="img.2.jpg" alt="imagen 2">
+                </div>
+                <div class="gallry-cell">
+                    <img src="img.3.jpg" alt="imagen 3">
+                </div>
+                <div class="gallry-cell">
+                    <img src="img.4.jpg" alt="imagen 4">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Comidas explisitas para el paladar</h2>
+                <p>Este es el sitio que te antoja de todo</p>
+                <button>leer Más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SABORES -->
+    <seccion id="sabores">
+        <h2>Sabores</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="ensalada.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ensaladas</h3>
+                    <p>Empalagate con las mejores ensaladas en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="torta.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Torta</h3>
+                    <p>Empalagate con las mejores ensaladas en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="hanburguesa.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Hanburguesas</h3>
+                    <p>Empalagate con las mejores ensaladas en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="helado.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Helados</h3>
+                    <p>como los mejores helados en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="pasta.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pastas</h3>
+                    <p>Si estas buscando pastas, estas en el sitio indicado en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="galleta.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Galletas</h3>
+                    <p>Encuentra las galletas de chispas de chocolota en <u>Q'RICO</u>.</p>
+                </div>
+            </div>
+        </div>
+        <button>Ver Más</button>
+    </seccion>
+    
+    <!-- SECCION PLATOS -->
+    <seccion id="platos">
+        <h2>Platos</h2>
+        <div class="fila">
+            <div class="item">
+                <img src="platojose.jpg" alt="">
+                <p>Pollo Con Papitas Fritas y Ketchup</p>
+                </div>
+            <div class="item">
+                <img src="plato2.jpg" alt="">
+                <p>Plato De Ensalada De Pescado</p>
+                </div>
+            <div class="item">
+                <img src="plato3.jpg" alt="">
+                <p>Plato De Carne Asada</p>
+            </div>                    
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="plato4.jpg" alt="">
+                <p>Plato De Bife A La Plancha</p>
+                </div>
+            <div class="item">
+                <img src="plato5.jpg" alt="">
+                <p>Plato De Pizza Con Rúcula</p>
+                </div>
+            <div class="item">
+                <img src="plato6.jpg" alt="">
+                <p>Plato De Pasta Con Carne Molida</p>
+            </div>                    
+        </div>
+    
+        <button>Ver Más</button>
+    </seccion>
+
+    <!-- SECCION BLOG -->
+    <seccion id="blog">
+        <h2>Blog</h2>
+        <!-- carrusel de items de blog-->
+        <div class="galeria-blog js-flickity" data-flickity-options='{"wrapAoround":true, "pageDots":true}'>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="chef1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>El arte de cocinar</h3>
+                        <p>Es el arte de preparar y cocinar los alimentos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="chef2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>¿Donde estudiar cocina?</h3>
+                        <p>Es el arte de preparar y cocinar los alimentos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="chef3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La cocina del 2023</h3>
+                        <p>Es el arte de preparar y cocinar los alimentos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Leer Más</button>
+    </seccion>
+
+    <!-- SECCION CONTACTO -->
+    <seccion id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>Q'RICO</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#">Inicio</a>
+                <a href="#">Sabores</a>
+                <a href="#">Platos</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Jorge Rausch</a>
+                <a href="#">Nicolás de Zubiría</a>
+                <a href="#">Christopher Carpentier</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+    </seccion>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>    
